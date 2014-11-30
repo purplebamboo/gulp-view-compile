@@ -14,6 +14,10 @@ gulp-view-compile[![Build Status](https://travis-ci.org/purplebamboo/gulp-view-c
 ## example
 
 ```
+
+var rename = require('gulp-rename');
+var viewCompile = require('gulp-view-compile');
+
 gulp.src('./public/views/**/*.html').
   pipe(viewCompile({
     //定义资源根目录。模块的id名会是html文件的绝对地址去掉这个base.不填的话默认就不会有模块id.
