@@ -1,11 +1,11 @@
-gulp-view-compile
+gulp-view-compile[![Build Status](https://travis-ci.org/purplebamboo/gulp-view-compile.svg)](https://travis-ci.org/purplebamboo/gulp-view-compile)
 =================
 
 用于将html代码打包成cmd,amd规范可以使用的模块。这样可以跨域使用。
 
 ## Installation
 
-`npm install managejs`
+`npm install gulp-view-compile`
 
 ## Test
 `npm test`
