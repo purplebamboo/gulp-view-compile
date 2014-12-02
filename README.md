@@ -45,6 +45,13 @@ gulp.src('./public/views/**/*.html').
 ###options.removeSpace
 是否移除所有的空格，默认是true。
 
+###options.protectMark
+是否保留一些标记里面内容的格式，比如换行空格。
+此参数只有在options.removeSpace为true的情况下起作用。
+
+默认值为['pre']，所有pre标签里面的格式会被保留。支持简单的选择器写法，比如['pre','#test','.test']。
+
+
 ###options.idMap
 生成的模块名转换函数，接受一个生成好的模块id为参数,比如如果希望模块名加上`-debug`:
 
