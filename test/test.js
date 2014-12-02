@@ -100,6 +100,22 @@ var testStream;
     })
    })
 
+   it('use protectMark to remain empty',function(done){
+
+    testStream.pipe(viewCompile({
+      base:__dirname
+      //protectMark:
+
+    })).
+    on('data',function(chucnk){
+      var str = chucnk.contents.toString()
+      assert.equal(true,new RegExp('1  8').test(str))
+    }).
+    on('end',function(){
+      done()
+    })
+   })
+
  })
 
 

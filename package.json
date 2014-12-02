@@ -14,12 +14,12 @@
     "gulpplugin"
   ],
   "dependencies": {
+    "cheerio": "^0.18.0",
     "through-gulp": "~0.3.1"
   },
-
   "devDependencies": {
     "mocha": "~1.21.5",
-    "vinyl-fs":"~0.3.13"
+    "vinyl-fs": "~0.3.13"
   },
   "author": "xhzhuweikang@163.com",
   "license": "MIT",
