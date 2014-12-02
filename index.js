@@ -59,10 +59,11 @@ function viewComile(options) {
     //var root = null;
     var protectHash = {}
     var root = null
+    var specialId = ''
+
 
     return {
       protect:function(str){
-        var specialId = ''
         root = cheerio.load(str,{
           decodeEntities: false
         })
@@ -72,7 +73,7 @@ function viewComile(options) {
 
             specialId = 'placeholder-'+markIndex+index
 
-            protectHash[specialId] = root(this).html().replace(/\n+/g, '\\n').replace(/\r+/g, '\\r')
+            protectHash[specialId] = root(this).html().replace(/\n/g, '\\n').replace(/\r/g, '\\r')
 
             root(this).html('<div id="'+specialId+'"></div>')
 
